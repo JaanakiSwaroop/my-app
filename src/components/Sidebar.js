@@ -33,7 +33,7 @@ const NavLink = ({ to, label, location, icon }) => {
 
   return (
     <Link to={to} className={`nav-link ${isActive ? 'active' : ''}`}>
-      <FontAwesomeIcon icon={icon} className="nav-icon" /> {/* Render the icon */}
+      <FontAwesomeIcon icon={icon} className="nav-icon" /> {}
       {label}
     </Link>
   );
