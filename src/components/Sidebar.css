@@ -1,0 +1,130 @@
+/* Sidebar.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 200px; /* Adjust width as needed */
+  background-color: #333;
+  padding-top: 60px; /* Adjust top padding to accommodate any header */
+  transition: transform 0.3s ease, width 0.3s ease; /* Added width transition */
+  z-index: 1000;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+  width: 200px; /* Adjust width when sidebar is open */
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+  width: 60px; /* Adjust width when sidebar is closed */
+}
+
+.hamburger {
+  display: none; /* Hide hamburger button by default */
+  position: absolute;
+  top: 20px;
+  right: 10px; /* Adjust right position */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+}
+
+.sidebar.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.sidebar.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.sidebar.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+}
+
+.nav-links a.active {
+  background-color: #555; /* Adjust active nav item background color */
+}
+
+/* Adjust styling between each nav item */
+.nav-links a:not(:last-child) {
+  margin-bottom: 5px; /* Add margin between nav items */
+}
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 0px; /* Adjust width for small screens */
+    left: -10px; /* Adjust left position to keep sidebar off-screen initially */
+  }
+
+  .sidebar.open {
+    left: 0px; /* Adjust left position to bring sidebar onto the screen */
+  }
+
+  .sidebar.closed {
+    left: -100px; /* Adjust left position to move sidebar off-screen when closed */
+  }
+
+  .sidebar.open .bar:nth-child(1) {
+    transform: rotate(0) translate(0, 0);
+  }
+
+  .sidebar.open .bar:nth-child(3) {
+    transform: rotate(0) translate(0, 0);
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger button on small screens */
+  }
+
+  .nav-links {
+    padding-top: 10px; /* Adjust padding for small screens */
+  }
+
+  .nav-links a {
+    padding: 0px; /* Adjust padding for small screens */
+  }
+
+  .nav-links a:not(:last-child) {
+    margin-bottom: 3px; /* Adjust margin between nav items for small screens */
+  }
+
+  .nav-links a .nav-label {
+    display: none; /* Hide the label for small screens */
+  }
+
+  .nav-links a {
+    justify-content: center; /* Center align icons */
+    padding: 15px; /* Adjust padding for better touch target */
+  }
+}

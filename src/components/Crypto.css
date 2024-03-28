@@ -1,0 +1,52 @@
+/* Crypto.css */
+
+.crypto-container {
+  margin: 20px;
+}
+
+.crypto-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.crypto-card {
+  width: 250px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.crypto-card h3 {
+  margin-bottom: 10px;
+}
+
+.crypto-card p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+  .crypto-container {
+    margin: 10px; /* Decrease margin for small screens */
+  }
+
+  .crypto-card {
+    width: 200px; /* Decrease card width for small screens */
+    padding: 15px; /* Decrease padding for small screens */
+    margin: 5px; /* Decrease margin for small screens */
+  }
+
+  .crypto-card h3 {
+    font-size: 18px; /* Decrease heading font size for small screens */
+  }
+
+  .crypto-card p {
+    font-size: 16px; /* Decrease paragraph font size for small screens */
+    margin-bottom: 15px; /* Decrease margin bottom for small screens */
+  }
+}

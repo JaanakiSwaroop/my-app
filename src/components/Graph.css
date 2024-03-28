@@ -1,0 +1,8 @@
+/* Add media query for small screens */
+@media (max-width: 768px) {
+    .chartCanvas {
+      width: 300px; /* Adjust width for small screens */
+      height: 300px; /* Adjust height for small screens */
+    }
+  }
+  
