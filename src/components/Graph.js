@@ -23,7 +23,7 @@ const PopulationChart = () => {
   useEffect(() => {
     if (populationData.length > 0) {
       if (chartInstance) {
-        chartInstance.destroy(); // Destroy existing chart instance
+        chartInstance.destroy(); 
       }
 
       // Extracting data for chart
@@ -53,7 +53,7 @@ const PopulationChart = () => {
         }
       });
 
-      setChartInstance(newChartInstance); // Save new chart instance
+      setChartInstance(newChartInstance); 
     }
   }, [populationData]);
 
