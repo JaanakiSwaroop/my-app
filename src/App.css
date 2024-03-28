@@ -1,4 +1,3 @@
-/* App.css */
 .app {
   display: flex;
   height: 100vh;
@@ -15,9 +14,9 @@
 .content {
   flex: 1;
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  padding-top: 10px; /* Adjust top padding to accommodate the navbar */
+  justify-content: center; 
+  align-items: center; 
+  padding-top: 10px; 
 }
 
 @media (max-width: 768px){
