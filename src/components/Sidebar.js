@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faChartBar, faCoins } from '@fortawesome/free-solid-svg-icons'; // Import the icons you want to use
-import './Sidebar.css'; // Import CSS file for styling
+import { faHome, faChartBar, faCoins } from '@fortawesome/free-solid-svg-icons'; 
+import './Sidebar.css'; 
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
