@@ -1,11 +1,10 @@
-// App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Home from './components/Home';
 import Graph from './components/Graph';
 import Crypto from './components/Crypto';
-import './App.css'; // Import CSS file for styling
+import './App.css'; 
 
 function App() {
   return (
