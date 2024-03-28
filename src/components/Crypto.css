@@ -40,11 +40,11 @@
   }
 
   .crypto-card h3 {
-    font-size: 18px; /* Decrease heading font size for small screens */
+    font-size: 18px; 
   }
 
   .crypto-card p {
-    font-size: 16px; /* Decrease paragraph font size for small screens */
-    margin-bottom: 15px; /* Decrease margin bottom for small screens */
+    font-size: 16px; 
+    margin-bottom: 15px; 
   }
 }
