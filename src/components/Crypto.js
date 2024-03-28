@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Crypto.css'; // Import CSS file for styling
+import './Crypto.css'; 
 
 const Crypto = () => {
   const [cryptoData, setCryptoData] = useState([]);
@@ -34,7 +34,7 @@ const Crypto = () => {
           <div className="crypto-card" key={item.id}>
             <h3>{item.name}</h3>
             <p>Price: ${item.price}</p>
-            {/* Additional cryptocurrency data can be added here */}
+            {}
           </div>
         ))}
       </div>
