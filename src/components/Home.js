@@ -1,4 +1,3 @@
-// Home.js, Graph.js, Crypto.js - These are simple functional components for respective routes
 import React from 'react';
 
 const Home = () => {
