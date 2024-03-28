@@ -1,31 +1,29 @@
-/* Sidebar.css */
-
 .sidebar {
   position: fixed;
   top: 0;
   height: 100%;
-  width: 200px; /* Adjust width as needed */
+  width: 200px; 
   background-color: #333;
-  padding-top: 60px; /* Adjust top padding to accommodate any header */
-  transition: transform 0.3s ease, width 0.3s ease; /* Added width transition */
+  padding-top: 60px; 
+  transition: transform 0.3s ease, width 0.3s ease;
   z-index: 1000;
 }
 
 .sidebar.open {
   transform: translateX(0);
-  width: 200px; /* Adjust width when sidebar is open */
+  width: 200px; 
 }
 
 .sidebar.closed {
   transform: translateX(-100%);
-  width: 60px; /* Adjust width when sidebar is closed */
+  width: 60px; 
 }
 
 .hamburger {
-  display: none; /* Hide hamburger button by default */
+  display: none; 
   position: absolute;
   top: 20px;
-  right: 10px; /* Adjust right position */
+  right: 10px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -72,27 +70,27 @@
 }
 
 .nav-links a.active {
-  background-color: #555; /* Adjust active nav item background color */
+  background-color: #555; 
 }
 
-/* Adjust styling between each nav item */
+
 .nav-links a:not(:last-child) {
-  margin-bottom: 5px; /* Add margin between nav items */
+  margin-bottom: 5px; 
 }
 
-/* Media Query for small screens */
+
 @media (max-width: 768px) {
   .sidebar {
-    width: 0px; /* Adjust width for small screens */
-    left: -10px; /* Adjust left position to keep sidebar off-screen initially */
+    width: 0px; 
+    left: -10px; 
   }
 
   .sidebar.open {
-    left: 0px; /* Adjust left position to bring sidebar onto the screen */
+    left: 0px; 
   }
 
   .sidebar.closed {
-    left: -100px; /* Adjust left position to move sidebar off-screen when closed */
+    left: -100px;
   }
 
   .sidebar.open .bar:nth-child(1) {
@@ -104,27 +102,27 @@
   }
 
   .hamburger {
-    display: block; /* Show hamburger button on small screens */
+    display: block; 
   }
 
   .nav-links {
-    padding-top: 10px; /* Adjust padding for small screens */
+    padding-top: 10px; 
   }
 
   .nav-links a {
-    padding: 0px; /* Adjust padding for small screens */
+    padding: 0px; 
   }
 
   .nav-links a:not(:last-child) {
-    margin-bottom: 3px; /* Adjust margin between nav items for small screens */
+    margin-bottom: 3px; 
   }
 
   .nav-links a .nav-label {
-    display: none; /* Hide the label for small screens */
+    display: none; 
   }
 
   .nav-links a {
-    justify-content: center; /* Center align icons */
-    padding: 15px; /* Adjust padding for better touch target */
+    justify-content: center;
+    padding: 15px; 
   }
 }
